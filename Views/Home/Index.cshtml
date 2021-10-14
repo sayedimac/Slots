@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center" style="background-color: @Conf["colour"];">
+    <h1 class="display-4">Welcome the @Conf["site"] site</h1>
+    <dl class="text-left">
+        <dt>DB connection string</dt>
+        <dd>@Conf["dbconn"]</dd>
+
+        <dt>Auth URL string</dt>
+        <dd>@Conf["auth"]</dd>
+    </dl>
+</div>
