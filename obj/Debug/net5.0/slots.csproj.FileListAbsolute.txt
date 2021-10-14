@@ -38,4 +38,3 @@ C:\Users\jomyburg\OneDrive - Microsoft\Documents\Repos\slots\obj\Debug\net5.0\re
 C:\Users\jomyburg\OneDrive - Microsoft\Documents\Repos\slots\obj\Debug\net5.0\slots.pdb
 C:\Users\jomyburg\OneDrive - Microsoft\Documents\Repos\slots\obj\Debug\net5.0\slots.genruntimeconfig.cache
 C:\Users\jomyburg\OneDrive - Microsoft\Documents\Repos\slots\obj\Debug\net5.0\slots.csproj.CopyComplete
-D:\OneDrive - Microsoft\Documents\Repos\az-slots-net31\obj\Debug\net5.0\slots.pdb
