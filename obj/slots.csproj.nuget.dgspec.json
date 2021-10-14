@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Repos\\slots\\slots.csproj": {}
+    "D:\\OneDrive - Microsoft\\Documents\\Repos\\az-slots-net31\\slots.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Repos\\slots\\slots.csproj": {
+    "D:\\OneDrive - Microsoft\\Documents\\Repos\\az-slots-net31\\slots.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Repos\\slots\\slots.csproj",
+        "projectUniqueName": "D:\\OneDrive - Microsoft\\Documents\\Repos\\az-slots-net31\\slots.csproj",
         "projectName": "slots",
-        "projectPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Repos\\slots\\slots.csproj",
+        "projectPath": "D:\\OneDrive - Microsoft\\Documents\\Repos\\az-slots-net31\\slots.csproj",
         "packagesPath": "C:\\Users\\jomyburg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Repos\\slots\\obj\\",
+        "outputPath": "D:\\OneDrive - Microsoft\\Documents\\Repos\\az-slots-net31\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jomyburg\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -24,7 +24,6 @@
         },
         "frameworks": {
           "net5.0": {
-            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -36,26 +35,12 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
         }
       }
     }
