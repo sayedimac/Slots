@@ -9,7 +9,7 @@ There are 4 fields:
 - colour (div background colour if you want to change colours between slots)
 - site (site name Dev in json file, UAT in UAT slot, PROD in Production slot)
 - auth (scope to app service annd applies to all sites)
-'''
+```
 {
   "dbconn":"dbconn-from-test",
   "colour":"#FF7F50",
@@ -24,4 +24,4 @@ There are 4 fields:
   },
   "AllowedHosts": "*"
 }
-'''
+```
