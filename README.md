@@ -25,3 +25,24 @@ This app reads values from the appsettings.json file by default and will continu
   "AllowedHosts": "*"
 }
 ```
+I am using views to surface these fields in the MVC application. The first view I had to change from the standard Dotnet MVC template, is the _ViewImports.cshtml  file. I simply added two lines that make these Configuration settings available in all views: 
+```
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Conf
+```
+This allows you to read these values using the following syntax:
+```
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center" style="background-color: @Conf["colour"];">
+    <h1 class="display-4">Welcome the @Conf["site"] site</h1>
+    <dl class="text-left">
+        <dt>DB connection string</dt>
+        <dd>@Conf["dbconn"]</dd>
+
+        <dt>Auth URL string</dt>
+        <dd>@Conf["auth"]</dd>
+    </dl>
+</div>
+```
