@@ -1,4 +1,4 @@
-# Example of a C# ASP.NET Core 3.1 application and App Config Slots
+# Example of a C# ASP.NET 5.0 application and App Config Slots
 
 Using Azure Application Service Slots for App Configuration management. Config settings can be scoped to an individual Slot, or apply to all Slots.
 
