@@ -50,7 +50,7 @@ This allows you to read these values using the following syntax:
 So to see this in action with a staging slot, follow the following steps:
 1. [Create an App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net60&pivots=development-environment-azure-portal#publish-your-web-app) in Azure - you will need at least an S1 plan to get deployment slots
 2. [Create configuration fields](https://learn.microsoft.com/en-us/azure/app-service/configure-common?tabs=portal#configure-app-settings) for each of these 4 config items (dbconn, colour, site and auth) as slot level config values except for Auth - scope that at the entire app service. Give them each production values like prod-dbconn, white, PROD and https://authendpoint
-[Create a staging slot](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#add-a-slot) for the app service and add config fields for each of the values except auth which should already be there. This time give them staging values like staing-dbconn, beige and STAGING
-3. Clone or fork this repo in Github
-4. [Setup the Deployment Center](https://learn.microsoft.com/en-us/azure/app-service/scripts/cli-deploy-github) to deploy the app from Github to the staging slot. You should see the Staging values in the app. MAke sure it is deployed to the Staging slot, not the Production slot
-5. [Swap the slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#swap-two-slots) - this should show the app in the Production slot, but with Production config values
+3. [Create a staging slot](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#add-a-slot) for the app service and add config fields for each of the values except auth which should already be there. This time give them staging values like staing-dbconn, beige and STAGING
+4. Clone or fork this repo in Github
+5. [Setup the Deployment Center](https://learn.microsoft.com/en-us/azure/app-service/scripts/cli-deploy-github) to deploy the app from Github to the staging slot. You should see the Staging values in the app. MAke sure it is deployed to the Staging slot, not the Production slot
+6. [Swap the slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#swap-two-slots) - this should show the app in the Production slot, but with Production config values
