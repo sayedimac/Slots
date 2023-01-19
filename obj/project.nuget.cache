@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TQEsPs9l6H1YI+SlbV1BmNRmUbgbeiFEXrSBffGdE3j4hJszRXyeSrud6c7Dzcb5+I+DoDmpEEFQlQy0fQOK1Q==",
+  "dgSpecHash": "mrDb1YN90iiW0h5FFM0Es7slbjU2g+2aihnlIVPEhzCkZ9foCDZTjMqke5h8x1VxQnA+gcx3Z95mlxI0pnUt0A==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive - Microsoft\\Documents\\Repos\\az-slots-net31\\slots.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\az-slots-net\\slots.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jomyburg\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.13\\microsoft.netcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
+    "C:\\Users\\jomyburg\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.13.nupkg.sha512",
+    "C:\\Users\\jomyburg\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x64.6.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
