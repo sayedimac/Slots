@@ -1,12 +1,13 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {},
-    "net6.0/win-x64": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jomyburg\\.nuget\\packages\\": {},
@@ -35,7 +36,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "Https://api.nuget.org": {}
       },
       "frameworks": {
         "net6.0": {
@@ -52,6 +53,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "target": "Package",
+            "version": "[1.17.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -63,20 +70,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.13, 6.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -87,11 +80,14 @@
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
-      }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.VisualStudio.Azure.Containers.Tools.Targets' from remote source 'Https://api.nuget.org/FindPackagesById()?id='Microsoft.VisualStudio.Azure.Containers.Tools.Targets'&semVerLevel=2.0.0'.",
+      "libraryId": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets"
+    }
+  ]
 }
