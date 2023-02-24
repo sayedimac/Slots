@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  slots:
-    image: ${DOCKER_REGISTRY-}slots
-    build:
-      context: .
-      dockerfile: Dockerfile
