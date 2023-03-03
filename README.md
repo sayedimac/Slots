@@ -1,3 +1,4 @@
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://sayedimac-urban-acorn-wv5r6r9x455c9477.github.dev)
 # Example of a C# ASP.NET 6.0 application and Azure App Service Deploymnet Slots!
 
 Using Azure Application Service Slots for App Configuration management. Config settings can be scoped to an individual Slot, or apply to all Slots.
