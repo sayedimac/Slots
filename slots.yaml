@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: slots
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+     app: slots
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5 
+  template:
+    metadata:
+      labels:
+        app: slots
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      containers:
+      - name: nginx
+        image: alwayson.azurecr.io/slots:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: slots
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: slots
