@@ -57,12 +57,12 @@ So to see this in action with a staging slot, follow the following steps:
 6. [Swap the slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#swap-two-slots) - this should show the app in the Production slot, but with Production config values
 
 
-I recently added a Docker file for building hte app as a docker container.
-Simple run the following command to build and tag a container image of the app - this example tags the image fo rthe Github Container Registry and of course you would have had to login from Docker before you can execute and push this image to the registry:
+I recently added a Docker file for building the app as a docker container (dockerfile in the root of the repo).
+Simple run the following command in the root of hte repo to build and tag a container image of the app - this example tags the image for the Github Container Registry and of course you would have had to login from Docker before you can execute and push this image to the registry:
 ``` 
 docker build -f dockerfile . -t ghcr.io/sayedimac/slots:latest
 docker push ghcr.io/sayedimac/slots:latest
 ```
 This will publish the image to MY regsitry so you will have to replace the sayedimac part of the tag and the regsitry with your own orgsanisation name
 
-Lastly I have created a yaml file you might use to publish this app to a Kubernetes Cluster (slots.yaml)
+Lastly I have created a yaml file you might use to publish this app to a Kubernetes Cluster (slots.yaml in the root of the repo).
