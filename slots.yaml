@@ -20,8 +20,8 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-      - name: nginx
-        image: alwayson.azurecr.io/slots:latest
+      - name: slots
+        image: ghcr.io/sayedimac/slots:latest
         ports:
         - containerPort: 80
         resources:
