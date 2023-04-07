@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TY1xx5O5eYYBVdIEPnROiRuoJIRGwrDAPSAAOlNifF9UQ/1tACKK6KdlK/ZQG1b2QAefuo3tBFNsQQ3rhPY7yw==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\az-slots-net\\slots.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Failed to retrieve information about 'Microsoft.VisualStudio.Azure.Containers.Tools.Targets' from remote source 'Https://api.nuget.org/FindPackagesById()?id='Microsoft.VisualStudio.Azure.Containers.Tools.Targets'&semVerLevel=2.0.0'.",
-      "libraryId": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets"
-    }
-  ]
+  "dgSpecHash": "BToNspkn9ht+FiU8beYI6wLh/cwO0oC8DG3XrlkvgrGRVn+GcZVXxNA8QIU+X1TZNXNNqVtf10tl3D45EZFKDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jomyburg\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
 }
