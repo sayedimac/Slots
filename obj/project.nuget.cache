@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LC1zGoiyRXTYB0wCr0BKZoquy3ybOyZ5uWy0+Zi/Mof3O4CacIhUSDqRU4okrKTk+NZrU+AVNg5kZ/hizM9Juw==",
+  "dgSpecHash": "mqmNbBTlQrUrKhfA0QZFl4H7FjJIzVKZ8VMsfYpAqR/phKxE/Qq1nJx7ASzjl/F4b5HqYrltP98ayYB15ucc9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\jomyburg\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

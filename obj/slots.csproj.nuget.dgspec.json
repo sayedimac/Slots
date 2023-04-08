@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj": {}
+    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj": {
+    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj",
-        "projectName": "slots",
-        "projectPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj",
+        "projectUniqueName": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
+        "projectName": "Slots",
+        "projectPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
         "packagesPath": "C:\\Users\\jomyburg\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\obj\\",
         "projectStyle": "PackageReference",
@@ -44,12 +44,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
-              "target": "Package",
-              "version": "[1.17.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
