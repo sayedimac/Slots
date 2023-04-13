@@ -4960,11 +4960,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
+      "projectUniqueName": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
       "projectName": "Slots",
-      "projectPath": "c:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
+      "projectPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
       "packagesPath": "C:\\Users\\jomyburg\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\obj\\",
+      "outputPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4980,7 +4980,8 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/jm400/038ebd81-d1e4-449e-8318-5a1ee17dd171/_packaging/myFeed/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
