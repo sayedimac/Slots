@@ -55,5 +55,3 @@ So to see this in action with a staging slot, follow the following steps:
 5. [Setup the Deployment Center](https://learn.microsoft.com/en-us/azure/app-service/scripts/cli-deploy-github) to deploy the app from Github to the staging slot. You should see the Staging values in the app. MAke sure it is deployed to the Staging slot, not the Production slot
 6. [Swap the slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#swap-two-slots) - this should show the app in the Production slot, but with Production config values
 
-
-hahaha
