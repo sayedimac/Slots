@@ -35,7 +35,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/alwayson:${{ github.sha }}
+          tags: ghcr.io/sayedimac:${{ github.sha }}
           file: ./Dockerfile
           context: ./
 
