@@ -12,7 +12,7 @@ on:
 env:
   DOTNET_VERSION: '7.0.x' # set this to the dotnet version to use
   REGISTRY: ghcr.io
-  IMAGE_NAME: sayedimac/myfunc
+  IMAGE_NAME: sayedimac/slots
 
 
 jobs:
