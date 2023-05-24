@@ -6,7 +6,10 @@ name: Build and push container image to GHCR
 on:
   push:
     branches:
-      - main
+      - master
+    paths-ignore:
+    - 'README.md'
+    - '.github/**'
   workflow_dispatch:
 
 env:
