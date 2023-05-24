@@ -1,4 +1,4 @@
-namespace Slots.Models;
+namespace mvc.Models;
 
 public class ErrorViewModel
 {

@@ -1,0 +1,7 @@
+C:\Users\jomyburg\OneDrive - Microsoft\Documents\Content\Repos\mvc\bin\Debug\net6.0\publish\mvc.exe
+C:\Users\jomyburg\OneDrive - Microsoft\Documents\Content\Repos\mvc\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\jomyburg\OneDrive - Microsoft\Documents\Content\Repos\mvc\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\jomyburg\OneDrive - Microsoft\Documents\Content\Repos\mvc\bin\Debug\net6.0\publish\mvc.dll
+C:\Users\jomyburg\OneDrive - Microsoft\Documents\Content\Repos\mvc\bin\Debug\net6.0\publish\mvc.deps.json
+C:\Users\jomyburg\OneDrive - Microsoft\Documents\Content\Repos\mvc\bin\Debug\net6.0\publish\mvc.runtimeconfig.json
+C:\Users\jomyburg\OneDrive - Microsoft\Documents\Content\Repos\mvc\bin\Debug\net6.0\publish\mvc.pdb

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj": {}
+    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj": {
+    "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
-        "projectName": "Slots",
-        "projectPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\Slots.csproj",
+        "projectUniqueName": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj",
+        "projectName": "slots",
+        "projectPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj",
         "packagesPath": "C:\\Users\\jomyburg\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\obj\\",
         "projectStyle": "PackageReference",
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,8 +31,8 @@
           "https://pkgs.dev.azure.com/jm400/038ebd81-d1e4-449e-8318-5a1ee17dd171/_packaging/myFeed/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -43,26 +43,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.ApplicationInsights": {
-              "target": "Package",
-              "version": "[2.18.0, )"
-            },
-            "Microsoft.ApplicationInsights.AspNetCore": {
-              "target": "Package",
-              "version": "[2.18.0, )"
-            },
-            "Microsoft.ApplicationInsights.PerfCounterCollector": {
-              "target": "Package",
-              "version": "[2.18.0, )"
-            },
-            "Microsoft.Extensions.Logging.ApplicationInsights": {
-              "target": "Package",
-              "version": "[2.18.0, )"
-            }
-          },
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -82,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

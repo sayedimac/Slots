@@ -1,19 +1,15 @@
-# https://hub.docker.com/_/microsoft-dotnet
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-WORKDIR /source
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+WORKDIR /App
 
-# copy csproj and restore as distinct layers
-COPY /*.csproj .
-RUN dotnet restore --use-current-runtime  
+# Copy everything
+COPY . ./
+# Restore as distinct layers
+RUN dotnet restore
+# Build and publish a release
+RUN dotnet publish -c Release -o out
 
-# copy everything else and build app
-COPY /. .
-RUN dotnet publish -c Release -o /app --use-current-runtime --self-contained false --no-restore
-
-# final stage/image
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
-WORKDIR /app
-COPY --from=build /app .
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
+WORKDIR /App
+COPY --from=build-env /App/out .
 ENTRYPOINT ["dotnet", "slots.dll"]
-EXPOSE 80
-LABEL org.opencontainers.image.description Latest slots version...
