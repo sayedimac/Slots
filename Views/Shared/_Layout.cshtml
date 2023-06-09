@@ -19,6 +19,36 @@ cfg: { // Application Insights Configuration
  connectionString: "@Conf["insights"] "
 }});
 </script>
+    <script type="text/javascript" src="https://js.monitor.azure.com/scripts/b/ext/ai.clck.2.min.js"></script>
+<script type="text/javascript">
+  var clickPluginInstance = new Microsoft.ApplicationInsights.ClickAnalyticsPlugin();
+  // Click Analytics configuration
+  var clickPluginConfig = {
+    autoCapture : true,
+    dataTags: {
+      useDefaultContentNameOrId: true
+    }
+  }
+  // Application Insights configuration
+  var configObj = {
+    connectionString: "@Conf["insights"]",
+    // Alternatively, you can pass in the instrumentation key,
+    // but support for instrumentation key ingestion will end on March 31, 2025.
+    // instrumentationKey: "YOUR INSTRUMENTATION KEY",
+    extensions: [
+      clickPluginInstance
+    ],
+    extensionConfig: {
+      [clickPluginInstance.identifier] : clickPluginConfig
+    },
+  };
+  // Application Insights SDK Loader Script code
+  !function(v,y,T){<!-- Removed the SDK Loader Script code for brevity -->}(window,document,{
+    src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js",
+    crossOrigin: "anonymous",
+    cfg: configObj // configObj is defined above.
+  });
+</script>
 </head>
 <body>
     <header>
