@@ -1,15 +1,19 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
-WORKDIR /App
+# Learn about building .NET container images:
+# https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /source
 
-# Copy everything
-COPY . ./
-# Restore as distinct layers
-RUN dotnet restore
-# Build and publish a release
-RUN dotnet publish -c Release -o out
+# copy csproj and restore as distinct layers
+COPY ./*.csproj .
+RUN dotnet restore --use-current-runtime  
 
-# Build runtime image
+# copy everything else and build app
+COPY ./. .
+RUN dotnet publish --use-current-runtime --self-contained false --no-restore -o /app
+
+
+# final stage/image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
-WORKDIR /App
-COPY --from=build-env /App/out .
+WORKDIR /app
+COPY --from=build /app .
 ENTRYPOINT ["dotnet", "slots.dll"]
