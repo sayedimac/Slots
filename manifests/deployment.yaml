@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myFlow
+  labels:
+    app: myFlow
+    kubernetes.azure.com/generator: devhub
+  namespace: namespace-workflow-1722955762279
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myFlow
+  template:
+    metadata:
+      labels:
+        app: myFlow
+    spec:
+      containers:
+        - name: myFlow
+          image: jaz104.azurecr.io/myslots:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
