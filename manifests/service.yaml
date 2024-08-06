@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myFlow
-  namespace: namespace-workflow-1722955762279
+  name: slots
+  namespace: namespace-workflow-1722956080676
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: myFlow
+    app: slots
   ports:
     - protocol: TCP
       port: 5000
