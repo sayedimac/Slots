@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("slots")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d77d827ab1c0b1c963913395010eb00173aef3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("slots")]
 [assembly: System.Reflection.AssemblyTitleAttribute("slots")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

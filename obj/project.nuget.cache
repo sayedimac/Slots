@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NF/z/NsYg9j6hV0sEXHS7Y5hj+mfJ3sN/i5KxIspMRcV4ZQtg+f+RIhxzOiULkXKHx/5O5umc5bf1FbigfOZZA==",
+  "dgSpecHash": "5YGIMuFJnPI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jomyburg\\OneDrive - Microsoft\\Documents\\Content\\Repos\\Slots\\slots.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/Slots/slots.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.33/microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.33/microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.33/microsoft.netcore.app.host.linux-x64.6.0.33.nupkg.sha512"
+  ],
   "logs": []
 }
