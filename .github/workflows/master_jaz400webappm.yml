@@ -53,6 +53,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'jaz400webappm'
-          slot-name: 'Production'
+          slot-name: 'uat'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_717D49D78769472793ADA33A90CFEFFC }}
