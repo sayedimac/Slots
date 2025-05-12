@@ -4,9 +4,7 @@
 name: Build and deploy ASP.Net Core app to Azure Web App - jaz400webprod
 
 on:
-  push:
-    branches:
-      - master
+
   workflow_dispatch:
 
 jobs:
@@ -52,7 +50,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'jaz400webprod'
+          app-name: 'jazjaz204dotnet'
           slot-name: 'uat'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D450F77829D34FC88903E53D8C095160 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
