@@ -3,7 +3,12 @@
 
 name: Build and deploy to Azure App Service
 
-on:
+on: 
+  push:
+    branches:
+      - master
+    paths-ignore:
+    - '.github/**'
   workflow_dispatch:
 
 jobs:
