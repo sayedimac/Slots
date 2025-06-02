@@ -4,9 +4,6 @@
 name: Build and deploy ASP.Net Core app to Azure Web App - jaz2008
 
 on:
-  push:
-    branches:
-      - uat
   workflow_dispatch:
 
 jobs:
