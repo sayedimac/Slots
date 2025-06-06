@@ -1,8 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Home Page for AZ-2008";
+    ViewData["Title"] = "Home Page for @Conf["site"]";
 }
 <div class="text-center" style="background-color: @Conf["colour"];">
-    <h1 class="display-4">Welcome the @Conf["site"] site!</h1>
+    <h1 class="display-4">Welcome the @Conf["site"] Course!</h1>
     <dl class="text-left">
         <dt class="lefty">DB connection string:</dt>
         <dd class="lefty">@Conf["dbconn"]</dd>
