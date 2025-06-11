@@ -1,13 +1,18 @@
-﻿@{
-    ViewData["Title"] = "Home Page for @Conf["site"]";
+﻿@model Slots.Models.ConfigViewModel
+@{
+    ViewData["Title"] = @Model.Site;
 }
-<div class="text-center" style="background-color: @Conf["colour"];">
-    <h1 class="display-4">Welcome the @Conf["site"] Course!</h1>
-    <dl class="text-left">
-        <dt class="lefty">DB connection string:</dt>
-        <dd class="lefty">@Conf["dbconn"]</dd>
 
-        <dt class="lefty">Auth URL string:</dt>
-        <dd class="lefty">@Conf["auth"]</dd>
-    </dl>
+<div class="text-center">
+    <h1 class="display-4">Welcome to the @Model.Site</h1>
+      <div style="background-color: @Model.Colour; padding: 20px; border-radius: 10px; margin: 20px auto; max-width: 600px; color: white;">
+        <h3>Environment Information</h3>
+
+        <p><strong>Database Connection:</strong> @Model.DbConn</p>
+        <p><strong>Auth:</strong> @Model.Auth</p>
+        
+    </div>
+    
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+

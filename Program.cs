@@ -1,7 +1,13 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure the application to prioritize environment variables over appsettings.json
+builder.Configuration.AddEnvironmentVariables();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Register IConfiguration directly so it's accessible in controllers through DI
+builder.Services.AddSingleton(builder.Configuration);
 
 var app = builder.Build();
 
