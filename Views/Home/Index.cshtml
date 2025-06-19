@@ -1,18 +1,16 @@
-﻿@model Slots.Models.ConfigViewModel
+@model Slots.Models.ConfigViewModel
 @{
     ViewData["Title"] = @Model.Site;
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to the @Model.Site</h1>
-      <div style="background-color: @Model.Colour; padding: 20px; border-radius: 10px; margin: 20px auto; max-width: 600px; color: white;">
+    <h1 class="display-4" >
+        Welcome to the <span style="background: #fff; padding: 0 10px; border-radius: 5px;">@Model.Site Site</span>
+    </h1>
+    <div style="padding: 20px; border-radius: 10px; margin: 20px auto; max-width: 600px; background: @Model.Colour; color: #000000; border: 2px solid @Model.Colour;">
         <h3>Environment Information</h3>
-
-        <p><strong>Database Connection:</strong> @Model.DbConn</p>
-        <p><strong>Auth:</strong> @Model.Auth</p>
-        
+        <dl><dt>Database Connection:</dt> <dd>@Model.DbConn</dd></dl>
+        <dl><dt>Auth:</dt> <dd>@Model.Auth</dd></dl>
     </div>
-    
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
