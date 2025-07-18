@@ -1,6 +1,6 @@
 using System;
 
-namespace Slots.Models
+namespace slots.Models
 {
     public class ConfigViewModel
     {

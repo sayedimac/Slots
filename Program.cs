@@ -1,15 +1,16 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure the application to prioritize environment variables over appsettings.json
-builder.Configuration.AddEnvironmentVariables();
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Register IConfiguration directly so it's accessible in controllers through DI
+// Adding configuration for reading env variables
+builder.Configuration.AddEnvironmentVariables();
+
 builder.Services.AddSingleton(builder.Configuration);
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -20,14 +21,16 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
-
 app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapStaticAssets();
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
 
 app.Run();

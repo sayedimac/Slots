@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Slots.Models;
+using slots.Models;
 
-namespace Slots.Controllers;
+namespace slots.Controllers;
 
 public class HomeController : Controller
 {
@@ -14,12 +14,13 @@ public class HomeController : Controller
     {
         _logger = logger;
         _configuration = configuration;
-    }    public IActionResult Index()
+    }
+    public IActionResult Index()
     {
 
         var configModel = new ConfigViewModel
         {
-            Site = _configuration["site"] ?? "Default Site",    
+            Site = _configuration["site"] ?? "Default Site",
             DbConn = _configuration["dbconn"] ?? "Default Connection String",
             Colour = _configuration["colour"] ?? "Default Colour",
             Auth = _configuration["auth"] ?? "Default Auth"
