@@ -57,4 +57,4 @@ jobs:
           app-name: 'jaz204dotnet'
           slot-name: 'uat'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+          publish-profile: ${{ secrets.DEFAULTPROFILE }}
