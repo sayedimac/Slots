@@ -4,9 +4,9 @@ namespace slots.Models
 {
     public class ConfigViewModel
     {
-        public string Site { get; set; }
-        public string DbConn { get; set; }
-        public string Colour { get; set; }
-        public string Auth { get; set; }
+        public required string Site { get; set; }
+        public required string DbConn { get; set; }
+        public required string Colour { get; set; }
+        public required string Auth { get; set; }
     }
 }
